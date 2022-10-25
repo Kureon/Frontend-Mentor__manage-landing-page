@@ -250,6 +250,7 @@ p[data-width=wide] {
 }
 .primary-footer svg {
   max-width: inherit;
+  margin-inline: auto;
 }
 
 .primary-footer__wrapper {
@@ -293,6 +294,9 @@ input:where([type=text], [type=email], [type=password]) {
   .primary-footer__wrapper {
     grid-template-areas: "logo nav form" "social nav copyright";
     grid-template-columns: min-content 1fr auto;
+  }
+  .primary-footer svg {
+    margin-inline: 0;
   }
   .primary-footer__copyright {
     text-align: right;
@@ -497,7 +501,7 @@ input:where([type=text], [type=email], [type=password]) {
 }
 
 @media (min-width: 47em) {
-  .hero-imag::before {
+  .hero-image::before {
     width: 45%;
   }
 }
